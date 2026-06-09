@@ -23,7 +23,7 @@ CREATE TABLE ProductDescription (
     Description VARCHAR(100),
     ProductID INT,
     CountryID INT,    
-    FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE SET NULL,
+    FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE CASCADE,
     PRIMARY KEY (ID)
 ) ENGINE=InnoDB;
 
