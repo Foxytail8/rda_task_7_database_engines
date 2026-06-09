@@ -12,8 +12,7 @@ CREATE TABLE Countries (
 CREATE TABLE GeoIPCache (
     ID INT,
     IPRange VARCHAR(50),
-    CountryID INT,
-    FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE SET NULL,
+    CountryID INT, 
     PRIMARY KEY (ID)
 ) ENGINE=Memory;
 
